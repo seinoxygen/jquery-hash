@@ -36,7 +36,7 @@
 		}		
 		
 		return self.on('hashchange', function() {
-			self.path = window.location.hash.replace('/^#/', '');
+			self.path = window.location.hash.replace('#', '');
 			options.onChange.call(this, self.path);
 		});
 	};
